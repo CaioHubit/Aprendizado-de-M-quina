@@ -5,9 +5,9 @@ Tabela de conteúdos
 =================
    * Objetivo: Fazer correlações entre as características de alguns materiais e obter resultados que não seriam possíveis por outros métodos.
    * Métodos: Árvore; Floresta; K-NN; Regressão Linear; Baseline.
-   * Caio Eduardo Palatin de Souza
-   * Raphaella Tamyres Siqueira
-   * Tiago Marques
-   * Gustavo Alves Beneti
-   
+   * Caio Eduardo Palatin de Souza (Pregramador: Docstring e Organização).
+   * Raphaella Tamyres Siqueira (Programadora: Parte das Floresta).
+   * Tiago Marques (Programador: (Programador: Regressão, splitting dos dados de treino e teste, K-NN).
+   * Gustavo Alves Beneti (Programador: Terminou a Floresta, Comparação de Desempenho e Classificação).
+
 =================
