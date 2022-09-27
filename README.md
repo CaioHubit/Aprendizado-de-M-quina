@@ -3,7 +3,7 @@
 
 Tabela de conteúdos
 =================
-   * Objetivo: Fazer correlações entre as características e obter resultados que não seriam possíveis por outros métodos.
+   * Objetivo: Fazer correlações entre as características de alguns materiais e obter resultados que não seriam possíveis por outros métodos.
    * Métodos: Árvore; Floresta; K-NN; Regressão Linear; Baseline.
    * Caio Eduardo Palatin de Souza
    * Raphaella Tamyres Siqueira
