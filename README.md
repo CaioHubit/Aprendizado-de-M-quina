@@ -21,6 +21,16 @@ Tabela de conteúdos
    * [Tests](#testes)
    * [Tecnologias](#tecnologias)
 <!--te-->
+
+- `API`: DataBase (Coleta e Preparação)
+- `API`: K-NN
+- `API`: Regressão Linear
+- `API`: Árvore de Decisão
+- `API`: Floresta Aleatória
+- `API`: Classificação
+- `API`: 
+
+
 ## Colaboradores✨
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
