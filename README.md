@@ -15,3 +15,19 @@ Tabela de conteúdos
    * Tiago Marques (Programador: (Programador: Regressão, splitting dos dados de treino e teste, K-NN).
    * Gustavo Alves Beneti (Programador: Terminou a Floresta, Comparação de Desempenho e Classificação).
 =================
+
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Sobre](#Sobre)
+   * [Tabela de Conteudo](#tabela-de-conteudo)
+   * [Instalação](#instalacao)
+   * [Como usar](#como-usar)
+      * [Pre Requisitos](#pre-requisitos)
+      * [Local files](#local-files)
+      * [Remote files](#remote-files)
+      * [Multiple files](#multiple-files)
+      * [Combo](#combo)
+   * [Tests](#testes)
+   * [Tecnologias](#tecnologias)
+<!--te-->
