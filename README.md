@@ -1,4 +1,4 @@
-### Projeto em Andamento
+<h1 align="center"> Seu título aqui </h1>
 *Esse é um projeto que visa o aprendizado de máquina(Machine Learning), portanto foi feito em prol didático. Feito por um grupo de 4 estudantes da Ilum: Escola de Ciência.*
 
 Tabela de conteúdos
@@ -9,5 +9,4 @@ Tabela de conteúdos
    * Raphaella Tamyres Siqueira (Programadora: Parte das Floresta).
    * Tiago Marques (Programador: (Programador: Regressão, splitting dos dados de treino e teste, K-NN).
    * Gustavo Alves Beneti (Programador: Terminou a Floresta, Comparação de Desempenho e Classificação).
-
 =================
