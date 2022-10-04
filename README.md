@@ -4,6 +4,10 @@
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
+<p align="center">
+<img src="file:///C:/Users/caio220070/Downloads/pngwing.com.png"/>
+</p>
+
 *Esse é um projeto que visa o aprendizado de máquina(Machine Learning), portanto foi feito em prol didático. Feito por um grupo de 4 estudantes da Ilum: Escola de Ciência.*
 
 Tabela de conteúdos
