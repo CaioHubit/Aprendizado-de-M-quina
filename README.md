@@ -22,20 +22,15 @@ Tabela de conteúdos
    * [Tecnologias](#tecnologias)
 <!--te-->
 
-<p align="center">
-<img src="https://solucx.com.br/wp-content/uploads/2021/06/gif_machine-learning.gif"width="100px;"/>
-</p>
- ##<td align="center"><a href="https://github.com/TiagoMarquesHxH"><img src="https://solucx.com.br/wp-content/uploads/2021/06/gif_machine-learning.gif" #width="100px;" alt=""/><br /><sub><b>Tiago Marques</b></sub></a><br />Programmer</td>
-
- 
 - `API`: DataBase (Coleta e Preparação)
 - `API`: K-NN
 - `API`: Regressão Linear
 - `API`: Árvore de Decisão
 - `API`: Floresta Aleatória
 - `API`: Classificação
-- `API`: 
-
+- `API`: Redução de dimensionalidade
+- `API`: Agrupamento (clustering)
+- `API`: Detecção de outliers
 
 ## Colaboradores✨
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
