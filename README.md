@@ -4,23 +4,25 @@
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
-[Sobre](#Sobre)
+Sobre
 =================
 
-*Esse é um projeto que visa o aprendizado de máquina(Machine Learning), portanto foi feito em prol didático. Feito por um grupo de 4 estudantes da Ilum   Escola de Ciência.*
+<h3>Esse é um projeto que visa o aprendizado de máquina(Machine Learning), portanto foi feito em prol didático. Feito por um grupo de 4 estudantes da Ilum   Escola de Ciência.</h3>
+
+O projeto se baseia na adquirição de um dataset de interesse dos mais diversos bancos de API's existentes, para que possamos construir um algorítmo que aprenda sobre os dados e possa prever um alvo que lhe foi passado. A máquina, a partir do algorítmo implantado, irá se basear em diversos métodos para tentar encontrar semelhanças e correlações entre os dados, podendo assim retornar um valor aproximado ao nosso alvo.
+O dataset que escolhemos foi o *Minerals Database*, que contém diversos tipos de minerais e suas propriedades fisico-químicas, onde nossa finalidade é de prever através do algorítmo de aprendizagem de máquinas o *índice de refração* de um mineral baseado em suas outras propriedades.
 
 Tabela de Conteudo
 =================
-
-   Bloco 1
-   =================
+- [x] **Bloco 1: DataBase (Coleta e Preparação)**
    
   * O primeiro bloco consiste na coleta dos dados, sua conversão para um Dataframe e seu ajuste (remoção de dados incompletos, nulos e NaN e conversão de dados categóricos). Definem-se, então, os atributos que serão utilizados para a previsão do nosso alvo, e em seguida, é realizada a divisão deste Dataframe em dados de treino e teste, para que o computador possa realizar previsões do alvo que queremos prever, baseado no conjunto de dados treino. Por fim, análises estatísticas dos dados (variância, média, moda, desvio padrão, etc...) e graficações são computadas para melhor entendimento do comportamento dos dados que serão utilizados.
-   - `API`: DataBase (Coleta e Preparação)
-   - `API`: K-NN
-   - `API`: Regressão Linear
-   - `API`: Árvore de Decisão
-   - `API`: Floresta Aleatória
+
+- [x] **Bloco 2: Métodos de regressão**
+   - `Método`: K-NN vizinhos
+   - `Método`: Regressão Linear
+   - `Método`: Árvore de Decisão
+   - `Método`: Floresta Aleatória
    - `API`: Classificação
    - `API`: Redução de dimensionalidade
    - `API`: Agrupamento (clustering)
