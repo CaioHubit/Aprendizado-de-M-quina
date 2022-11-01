@@ -4,33 +4,37 @@
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
-*Esse é um projeto que visa o aprendizado de máquina(Machine Learning), portanto foi feito em prol didático. Feito por um grupo de 4 estudantes da Ilum Escola de Ciência.*
-
-Tabela de conteúdos
+[Sobre](#Sobre)
 =================
-<!--ts-->
-   * [Sobre](#Sobre)
-   * [Tabela de Conteudo](#tabela-de-conteudo)
-   * [Instalação](#instalacao)
+
+*Esse é um projeto que visa o aprendizado de máquina(Machine Learning), portanto foi feito em prol didático. Feito por um grupo de 4 estudantes da Ilum   Escola de Ciência.*
+
+Tabela de Conteudo
+=================
+
+   Bloco 1
+   =================
+   
+  * O primeiro bloco consiste na coleta dos dados, sua conversão para um Dataframe e seu ajuste (remoção de dados incompletos, nulos e NaN e conversão de dados categóricos). Definem-se, então, os atributos que serão utilizados para a previsão do nosso alvo, e em seguida, é realizada a divisão deste Dataframe em dados de treino e teste, para que o computador possa realizar previsões do alvo que queremos prever, baseado no conjunto de dados treino. Por fim, análises estatísticas dos dados (variância, média, moda, desvio padrão, etc...) e graficações são computadas para melhor entendimento do comportamento dos dados que serão utilizados.
+   - `API`: DataBase (Coleta e Preparação)
+   - `API`: K-NN
+   - `API`: Regressão Linear
+   - `API`: Árvore de Decisão
+   - `API`: Floresta Aleatória
+   - `API`: Classificação
+   - `API`: Redução de dimensionalidade
+   - `API`: Agrupamento (clustering)
+   - `API`: Detecção de outliers
+
    * [Como usar](#como-usar)
+      * [Instalação](#instalacao)
       * [Pre Requisitos](#pre-requisitos)
       * [Local files](#local-files)
       * [Remote files](#remote-files)
       * [Multiple files](#multiple-files)
       * [Combo](#combo)
-   * [Tests](#testes)
-   * [Tecnologias](#tecnologias)
+   * [Resultados](#resultados)
 <!--te-->
-
-- `API`: DataBase (Coleta e Preparação)
-- `API`: K-NN
-- `API`: Regressão Linear
-- `API`: Árvore de Decisão
-- `API`: Floresta Aleatória
-- `API`: Classificação
-- `API`: Redução de dimensionalidade
-- `API`: Agrupamento (clustering)
-- `API`: Detecção de outliers
 
 ## Colaboradores✨
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -50,10 +54,10 @@ Tabela de conteúdos
 
 Tabela de Funções
 =================
-   * Caio Eduardo Palatin de Souza (Pregramador: Docstring e Organização).
-   * Gustavo Alves Beneti (Programador: Terminou a Floresta, Comparação de Desempenho e Classificação).
-   * Raphaella Tamyres Siqueira (Programadora: Parte das Floresta).
-   * Tiago Marques (Programador: (Programador: Regressão, splitting dos dados de treino e teste, K-NN).
+   * Caio Eduardo Palatin de Souza (Programador: Docstring, Organização, Construção do método de clustering hierárquico).
+   * Gustavo Alves Beneti (Programador: Terminou a Floresta, Comparação de Desempenho e Classificação, Agrupamento K-means, Análise PCA).
+   * Raphaella Tamyres Siqueira (Programadora: Construção da regressão Florestas aleatórias e Detecção de outliers (Isolation Forest e Local Outlier Factor).
+   * Tiago Marques (Programador: Regressão Linear, Baseline e K-NN, Splitting dos dados de treino e teste, PCA para Regressão com Florestas aleatórias, Método de clustering hierárquico).
 <!-- markdownlint-enable -->
 
 ## Mentores✨
