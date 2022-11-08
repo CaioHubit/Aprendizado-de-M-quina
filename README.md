@@ -9,17 +9,27 @@ Sobre
 
 <h3>Esse é um projeto que visa o aprendizado de máquina(Machine Learning), portanto foi feito em prol didático. Feito por um grupo de 4 estudantes da Ilum   Escola de Ciência.</h3>
 
-O projeto se baseia na adquirição de um dataset de interesse dos mais diversos bancos de API's existentes, para que possamos construir um algorítmo que aprenda sobre os dados e possa prever um alvo que lhe foi passado. A máquina, a partir do algorítmo implantado, irá se basear em diversos métodos para tentar encontrar semelhanças e correlações entre os dados, podendo assim retornar um valor aproximado ao nosso alvo.
+O projeto se baseia na adquirição de um dataset de interesse dos mais diversos bancos de API's existentes, para que possamos construir um algorítmo que aprenda sobre os dados e possa prever um alvo que lhe foi passado. A máquina, a partir do algorítmo implantado, irá se basear em diversos métodos para tentar encontrar semelhanças e correlações entre os dados, podendo assim retornar um valor aproximado ao nosso alvo. Também são analisados os erros entre os dados originais e a previsão do modelo, com gráficos deixando mais visíveis estas margens de erro.
 O dataset que escolhemos foi o *Minerals Database*, que contém diversos tipos de minerais e suas propriedades fisico-químicas, onde nossa finalidade é de prever através do algorítmo de aprendizagem de máquinas o *índice de refração* de um mineral baseado em suas outras propriedades.
 
 Tabela de Conteudo
 =================
 - [x] **Bloco 1: DataBase (Coleta e Preparação)**
    
-  * O primeiro bloco consiste na coleta dos dados, sua conversão para um Dataframe e seu ajuste (remoção de dados incompletos, nulos e NaN e conversão de dados categóricos). Definem-se, então, os atributos que serão utilizados para a previsão do nosso alvo, e em seguida, é realizada a divisão deste Dataframe em dados de treino e teste, para que o computador possa realizar previsões do alvo que queremos prever, baseado no conjunto de dados treino. Por fim, análises estatísticas dos dados (variância, média, moda, desvio padrão, etc...) e graficações são computadas para melhor entendimento do comportamento dos dados que serão utilizados.
+  * O primeiro bloco consiste na escolha do dataset a ser utilizado, na coleta dos dados deste dataset, sua conversão para um Dataframe e seu ajuste (remoção de dados incompletos, nulos e NaN e conversão de dados categóricos). É uma etapa de extrema importância pois assim utilizaremos apenas os dados necessários e relevantes para conseguirmos realizar a previsão de nosso alvo.
 
 - [x] **Bloco 2: Métodos de regressão**
-   - `Método`: K-NN vizinhos
+
+  * Neste segundo bloco, iremos testar a eficiência do nosso modelo de previsões para identificarmos se possuímos de fato um bom modelo. Para um modelo bom, o viés e variância dos dados originais com os previstos devem ser equilibrados. Definem-se, então, os atributos que serão utilizados para a previsão do nosso alvo, e em seguida, é realizada a divisão deste Dataframe em dados de treino e teste, para que o computador possa realizar previsões do alvo que queremos prever, baseado no conjunto de dados treino. Por fim, análises estatísticas dos dados (variância, média, moda, desvio padrão, etc...), métricas de erros como RMSE e Quadrados Mínimos, e graficações, são computadas para melhor entendimento do comportamento dos dados que serão utilizados. Após a divisão de dados de treino e teste, podemos treinar nosso algoritmo com diversos métodos de regressão, e para alguns casos realizar a normalização logarítmica ou escalonada.
+
+   - [x] `Método`: Baseline (Dummy Regressor)
+      * Modelo mais simples, que realiza a previsão da média dos valores do target. É um modelo de extrema importância pois é um modelo de base, e será utilizado para ter seu erro comparado com os demais métodos.
+      
+   - [x] `Método`: Regressão Linear
+      * Também é um modelo simples e é fácil de ser analizado, pois traça apenas uma linha sobre os dados. Ainda terá um erro menor que o modelo baseline, pois haverá dados onde o modelo estará bem ajustado.
+      
+   - [x] `Método`: K-NN vizinhos
+      * Este já é um modelo de mais precisão e confiabilidade, e é relativamente simples de se entender, pois seu método relaciona que dados similares ocupam regiões próximas umas das outras. Neste método, podem ser definidos hiperparâmetros que podem auxiliar na diminuição do erro, tornando o método mais eficiente.
    - `Método`: Regressão Linear
    - `Método`: Árvore de Decisão
    - `Método`: Floresta Aleatória
