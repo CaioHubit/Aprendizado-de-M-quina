@@ -30,9 +30,12 @@ Tabela de Conteudo
       
    - [x] `Método`: K-NN vizinhos
       * Este já é um modelo de mais precisão e confiabilidade, e é relativamente simples de se entender, pois seu método relaciona que dados similares ocupam regiões próximas umas das outras. Neste método, podem ser definidos hiperparâmetros que podem auxiliar na diminuição do erro, tornando o método mais eficiente.
-   - `Método`: Regressão Linear
-   - `Método`: Árvore de Decisão
-   - `Método`: Floresta Aleatória
+      
+   - [x] `Método`: Árvore de Decisão
+      * Árvores de decisão são como grafos, possuindo vértices como sua raiz, decisão de vértices, e folhas. Nos vértices raiz e de decisão, condicionais são aplicados, gerando um valor de resultado nos vértices de folha. Este método gera um modelo mais fácil de ser explicado do que melhor performance de aprendizagem de máquina, pois os passos realizados para ser feita a previsão são bem explícitos. Também possui hiperparâmetros que podem ser alterados para se diminuir o erro, como o número de ramificações e o número de folhas.
+      
+   - [x] `Método`: Floresta Aleatória
+      * Florestas aleatórias são conjuntos de árvores de decisão, onde cada árvore de decisão irá realizar uma previsão, e comparando as decisões, o valor mais retornado será dado como a previsão final do algorítmo
    - `API`: Classificação
    - `API`: Redução de dimensionalidade
    - `API`: Agrupamento (clustering)
