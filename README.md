@@ -20,8 +20,8 @@ Tabela de Conteudo
 
 - [x] **Bloco 2: Métodos de regressão**
 
-  * Neste segundo bloco, iremos testar a eficiência do nosso modelo de previsões para identificarmos se possuímos de fato um bom modelo. Para um modelo bom, o viés e variância dos dados originais com os previstos devem ser equilibrados. Definem-se, então, os atributos que serão utilizados para a previsão do nosso alvo, e em seguida, é realizada a divisão deste Dataframe em dados de treino e teste, para que o computador possa realizar previsões do alvo que queremos prever, baseado no conjunto de dados treino. Por fim, análises estatísticas dos dados (variância, média, moda, desvio padrão, etc...), métricas de erros como RMSE e Quadrados Mínimos, e graficações, são computadas para melhor entendimento do comportamento dos dados que serão utilizados. Após a divisão de dados de treino e teste, podemos treinar nosso algoritmo com diversos métodos de regressão, e para alguns casos realizar a normalização logarítmica ou escalonada.
-
+  * Neste segundo bloco, iremos testar a eficiência do nosso modelo de previsões para identificarmos se possuímos de fato um bom modelo. Para um modelo bom, o viés e variância dos dados originais com os previstos devem ser equilibrados. Definem-se, então, os atributos que serão utilizados para a previsão do nosso alvo, e em seguida, é realizada a divisão deste Dataframe em dados de treino e teste, para que o computador possa realizar previsões do alvo que queremos prever, baseado no conjunto de dados treino. Após esta divisão, podemos treinar nosso algoritmo com diversos métodos de regressão, definir conjuntos de hiperparâmetros (que são atributos dos métodos que podemos alterar, a fim de uma melhora do treinamento do modelo), e para alguns casos realizar a normalização logarítmica ou escalonada. Por fim, análises estatísticas dos dados (variância, média, moda, desvio padrão, etc...), métricas de erros como RMSE e Quadrados Mínimos, e graficações, são computadas para melhor entendimento do comportamento dos dados que serão utilizados. 
+   - **Modelos de regressão supervisionados:**
    - [x] `Método`: Baseline (Dummy Regressor)
       * Modelo mais simples, que realiza a previsão da média dos valores do target. É um modelo de extrema importância pois é um modelo de base, e será utilizado para ter seu erro comparado com os demais métodos.
       
@@ -35,8 +35,12 @@ Tabela de Conteudo
       * Árvores de decisão são como grafos, possuindo vértices como sua raiz, decisão de vértices, e folhas. Nos vértices raiz e de decisão, condicionais são aplicados, gerando um valor de resultado nos vértices de folha. Este método gera um modelo mais fácil de ser explicado do que melhor performance de aprendizagem de máquina, pois os passos realizados para ser feita a previsão são bem explícitos. Também possui hiperparâmetros que podem ser alterados para se diminuir o erro, como o número de ramificações e o número de folhas.
       
    - [x] `Método`: Floresta Aleatória
-      * Florestas aleatórias são conjuntos de árvores de decisão, onde cada árvore de decisão irá realizar uma previsão, e comparando as decisões, o valor mais retornado será dado como a previsão final do algorítmo
-   - `API`: Classificação
+      * Florestas aleatórias são conjuntos de árvores de decisão, onde cada árvore de decisão irá realizar uma previsão, e comparando as decisões, o valor mais retornado será dado como a previsão final do algorítmo. O processo é aleatório pois o processo de se construir as árvores de decisão que compõem esta floresta envolve amostras dos exemplos e dos atributos. É um modelo impreciso que funciona bem com dados que lhe foram passados, mas não é flexível para trabalhar com novas amostras de dados. Além dos mesmos hiperparâmetros do modelo de Árvore de Decisão, temos o hiperparâmetro conhecido como **num_estimators**, que irá definir a quantidade de árvores de decisão que constituirão nossa floresta. Podemos definir a importância de um atributo a partir de **impureza**, que representam o quão bem os dados são divididos entre as árvores, e pelas árvores, sendo utilizado para a indução de árvores de decisão sem ser necessário o teste de todas as possibilidades.
+      
+   - [x] `Classificação`:
+      * A classificação consiste na separação de dados em grupos, e a partir destes treinar o modelo para classificar os itens destes grupos, que já possuem classes pré-definidas. Logo, é um processo semelhante à regressão, só que invés de termos os valores pré-definidos, temos as classes.
+      Os modelos de classificação podem ser aplicados aos métodos anteriores para treinarmos o algorítimo, como o método _K-nn_ mas não prevendo valores e sim classes/grupos
+      
    - `API`: Redução de dimensionalidade
    - `API`: Agrupamento (clustering)
    - `API`: Detecção de outliers
