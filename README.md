@@ -40,20 +40,40 @@ Tabela de Conteudo
    - [x] `Classificação`:
       * A classificação consiste na separação de dados em grupos, e a partir destes treinar o modelo para classificar os itens destes grupos, que já possuem classes pré-definidas. Logo, é um processo semelhante à regressão, só que invés de termos os valores pré-definidos, temos as classes.
       Os modelos de classificação podem ser aplicados aos métodos anteriores para treinarmos o algorítimo, como o método _K-nn_ mas não prevendo valores e sim classes/grupos
-      
-   - `API`: Redução de dimensionalidade
-   - `API`: Agrupamento (clustering)
-   - `API`: Detecção de outliers
 
-   * [Como usar](#como-usar)
-      * [Instalação](#instalacao)
-      * [Pre Requisitos](#pre-requisitos)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-   * [Resultados](#resultados)
-<!--te-->
+- [x] **Bloco 3 - Aprendizado de máquina não-supervisionado**
+
+   * No terceiro bloco, realizamos a aprendizagem não-supervisionada dos nossos dados, um método que não exige dados rotulados para que possamos analisá-los.
+   Este tipo de aprendizagem envolve métodos como Clusterizações dos dados, Reduções de suas dimensionalidades e a detecção de outliers, que serão explicados abaixo.
+
+   - [x] `Método`: Redução de dimensionalidade (PCA)
+      
+      * Quando dados são agrupados, formando clusters, podemos ter uma visualização de como estes dados se relacionam, mas em muitas das vezes, se temos muitos dados estes agrupamentos se tornam difícieis de serem visualizados. Para evitar esta dificuldade, seria necessário reduzir a dimensão do sistema, ou seja, combinar vários atributos e visualizar este gráfico em três dimensões. Para isso, podemos realizar uma análise dos componentes principais do conjunto de dados, conhecido também como PCA.
+      A redução de dimensionalidade do PCA se baseia em uma matriz onde as colunas são os atributos, estes são normalizados e desta matriz é obtida a matriz de covariância. Após isso, a matriz é diagonalizada e então os autovetores dos maiores autovalores são multiplicados pela matriz de atributos que foi escolhida inicialmente, fazendo assim a redução de dimensão.
+      
+   - [x] `Método`: Clustering K-means
+      
+      * Este método utiliza as médias e variância de cada cluster para conseguir reconhecer cada grupo, e para isso, o algorítimo seleciona 3 pontos quaisquer dos dados, com __n__ centroides iniciais. Então, a partir do cálculo da distância de cada ponto com cada centróide, o que ele tiver menor distância Euclidiana ao quadrado, será o cluster o qual ele será atribuido. Este processo será realizado com novos centróides para cada cluster, a partir da posição de todos os pontos atribuido a cada centróide.
+      Podemos identificar o número de clusters ideais através do Within-Cluster-Sum of Squared Errors (WSS) que calcula a distância entre todos os pontos do cluster com todos os outros pontos do cluster, mostrando o quão compacto ele é.
+   
+   - [x] `Método`: Valores anômalos
+      
+      * Em um conjunto de dados, podemos ter valores que estão "fora da reta", ou seja, diferenciando-se do comportamento dos outros dados. Estes tipos de valores são chamados de valores anômalos, que podem atrapalhar a aplicação do modelo para casos mais gerais pois aparentam ser inconsistentes.
+      Podemos detectar estes valores para sua análise através de duas estratégias de detecção, onde uma consiste na identificação de valores anômalos dentro de um conjunto já existente (detecção de outliers), e outro na identificação de valores anômalos em dados novos com relação a um conjunto já existente (detecção de novidade).
+      Existem algorítimos que implementam esta detecção em dados, e o primeiro deles é o algorítimo **Local Outlier Factor (LOF)**, que realiza o cálculo a distância entre os pontos para detectá-los, semelhante ao método K-NN.
+      O segundo dos algorítimos é o Isolation Forest (IF), que, utilizando uma floresta de árvores de decisão, realiza a detecção. Este algorítimo parte da ideia que é mais fácil de se isolar um valor anômalo que valores não-anômalos.
+      As árvores desta floresta irão isolar todos os pontos do conjunto de dados, ou seja, cada folha da árvore terá somente uma amostra do dataset ou amostras iguais, ou até mesmo nenhuma amostra.
+
+- [x] Bloco 4: Validação Cruzada
+   
+   * A validação cruzada se baseia em encontrar um bom conjunto de hiperparâmetros para se treinar um modelo. Também se utiliza uma parte dos dados de treino para a validação deste, a fim de ser obtido uma estatística do processo de validação.
+   
+   - [x] `Validação`: K-fold
+      
+      * Neste método de validação, o conjunto de treino dos dados é dividido em _k_ conjuntos de dados de tamanho igual, e assim, este modelo será treinado um número _k_ de vezes, com cada treino sendo realizado com k-1 dos conjuntos de dados. Ao final, é medido a performance do modelo no conjunto de validação (parte do conjunto de treino não utilizado no processo de treino).
+      Com a validação cruzada, algorítimos diferentes ou com cconjuntos de hiperparâmetros diferentes podem ser comparados a fim de encontrarmos aqueles com as melhores métricas.
+      Após este processo, treinamos um modelo semifinal, que envolve a utilização do algorítimo com melhor métrica e todo o conjunto de dados de treino, e através deste modelo, conseguiremos prever os dados de teste.
+      Se após a análise do modelo semifinal tivermos dados aceitáveis, podemos partir para a montagem do modelo final, onde utilizaremos todos os dados de treino e teste, e através deste, será possível realizar a previsão para qualquer dataset.
 
 ## Colaboradores✨
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
