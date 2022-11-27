@@ -96,7 +96,7 @@ Tabela de Funções
    * Caio Eduardo Palatin de Souza (Programador: Docstring, Organização, Construção do método de clustering hierárquico).
    * Gustavo Alves Beneti (Programador: Terminou a Floresta, Comparação de Desempenho e Classificação, Agrupamento K-means, Análise PCA).
    * Raphaella Tamyres Siqueira (Programadora: Construção da regressão Florestas aleatórias e Detecção de outliers (Isolation Forest e Local Outlier Factor).
-   * Tiago Marques (Programador: Regressão Linear, Baseline e K-NN, Splitting dos dados de treino e teste, PCA para Regressão com Florestas aleatórias, Método de clustering hierárquico).
+   * Tiago Marques (Programador: Regressão Linear, Baseline e K-NN, Splitting dos dados de treino e teste, PCA para Regressão com Florestas aleatórias, Método de clustering hierárquico, Desenvolvimento e Edição do README).
 <!-- markdownlint-enable -->
 
 ## Mentores✨
